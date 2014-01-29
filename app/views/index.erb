@@ -1,6 +1,11 @@
 <div class="container">
+  <p> <%= @valid_person %> </p>
+  <p> <%= @user_id %></p>
   <form action="/urls" method="post">
     Long URL: <input type="text" name="long_url"/><br/>
     <input type="submit" value="Shorten"/>
   </form>
+
+  <a href="/signin">Sign in</a>
+   <a href="/logout">Sign out</a>
 </div>

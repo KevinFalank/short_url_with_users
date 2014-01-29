@@ -1,4 +1,5 @@
 class Url < ActiveRecord::Base
+  belongs_to :user
   before_create :generate_short_url
 
 
